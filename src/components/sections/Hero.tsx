@@ -71,7 +71,7 @@ export function Hero() {
 
       <motion.div className="flex gap-2" variants={itemVariants}>
         <Link
-          href="/Resume - Iran Batista.pdf"
+          href={`${import.meta.env.BASE_URL}/Resume - Iran Batista.pdf`}
           target="_blank"
           rel="noopener noreferrer"
         >
