@@ -20,13 +20,13 @@ export function LanguageToggle() {
         )}
       />
       <button
-        className="text-white text-xs font-semibold px-2.5 py-1 rounded-full relative z-10 transition-opacity duration-200"
+        className="text-white text-xs font-semibold px-2.5 py-1 rounded-full relative z-10 transition-opacity duration-200 cursor-pointer"
         onClick={() => handleChangeLanguage("en")}
       >
         EN
       </button>
       <button
-        className="text-white text-xs font-semibold px-2.5 py-1 rounded-full relative z-10 transition-opacity duration-200"
+        className="text-white text-xs font-semibold px-2.5 py-1 rounded-full relative z-10 transition-opacity duration-200 cursor-pointer"
         onClick={() => handleChangeLanguage("pt")}
       >
         PT

@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineLink } from "react-icons/ai";
 import { Link } from "./components/Link";
 import { LanguageToggle } from "./components/LanguageToggle";
 import { Trans, useTranslation } from "react-i18next";
+import { CursorGlow } from "./components/CursorGlow";
 
 export function App() {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ export function App() {
   return (
     <>
       <Background />
+      <CursorGlow />
       <div className="w-full max-w-7xl mx-auto px-5 flex justify-end pt-2">
         <LanguageToggle />
       </div>
