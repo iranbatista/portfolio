@@ -2,18 +2,19 @@
 
 @theme {
   --font-sans: "Be Vietnam Pro", sans-serif;
+
+  --color-brand-500: #7ca0f9;
+  --color-brand-700: #375198;
+
+  --color-background-base: #0a1333;
+  --color-background-dark: #070f2b;
+
+  --shadow-avatar: 0 0 5px rgba(124, 160, 249, 0.2),
+    0 0 15px rgba(124, 160, 249, 0.2), 0 0 30px rgba(124, 160, 249, 0.2);
+  --shadow-btn: 0 0 5px rgba(124, 160, 249, 0.2),
+    0 0 10px rgba(124, 160, 249, 0.2);
 }
 
 .blue-text {
-  @apply text-transparent bg-linear-to-b from-[#7ca0f9] to-[#375198] bg-clip-text;
-}
-
-.avatar-shadow {
-  box-shadow: 0 0 5px rgba(124, 160, 249, 0.2),
-    0 0 15px rgba(124, 160, 249, 0.2), 0 0 30px rgba(124, 160, 249, 0.2);
-}
-
-.btn-shadow {
-  box-shadow: 0 0 5px rgba(124, 160, 249, 0.2),
-    0 0 10px rgba(124, 160, 249, 0.2);
+  @apply text-transparent bg-linear-to-b from-brand-500 to-brand-700 bg-clip-text;
 }

@@ -1,5 +1,6 @@
-import { cn } from "../utils/cn";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
+import { cn } from "../utils/cn";
 
 type Language = "en" | "pt";
 
@@ -7,30 +8,35 @@ export function LanguageToggle() {
   const { i18n } = useTranslation();
   const selected = i18n.language as Language;
 
-  const handleChangeLanguage = (lang: Language) => {
-    i18n.changeLanguage(lang);
+  const toggleLanguage = () => {
+    console.log({ selected });
+    i18n.changeLanguage(selected === "en" ? "pt" : "en");
   };
 
   return (
-    <div className="border border-[#7ca0f9] flex rounded-full p-1 btn-shadow relative">
+    <motion.div
+      className="border border-brand-500 flex rounded-full p-1 shadow-btn relative"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+    >
       <div
         className={cn(
-          "absolute inset-y-1 rounded-full bg-linear-to-b from-[#7ca0f9] to-[#375198] transition-all duration-300 ease-out",
+          "absolute inset-y-1 rounded-full bg-linear-to-b from-brand-500 to-brand-700 transition-all duration-300 ease-out",
           selected === "en" ? "left-1 right-[50%]" : "left-[50%] right-1"
         )}
       />
       <button
         className="text-white text-xs font-semibold px-2.5 py-1 rounded-full relative z-10 transition-opacity duration-200 cursor-pointer"
-        onClick={() => handleChangeLanguage("en")}
+        onClick={() => toggleLanguage()}
       >
         EN
       </button>
       <button
         className="text-white text-xs font-semibold px-2.5 py-1 rounded-full relative z-10 transition-opacity duration-200 cursor-pointer"
-        onClick={() => handleChangeLanguage("pt")}
+        onClick={() => toggleLanguage()}
       >
         PT
       </button>
-    </div>
+    </motion.div>
   );
 }
