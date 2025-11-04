@@ -75,7 +75,7 @@ export function Skills() {
 
           return (
             <motion.div
-              key={category.title}
+              key={category.id}
               className="bg-linear-to-br from-brand-500/10 via-transparent to-transparent border border-brand-500/20 rounded-lg p-4 md:p-6"
               variants={cardVariants}
               viewport={{ once: true, margin: "-50px" }}
