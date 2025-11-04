@@ -33,14 +33,14 @@ export function Section({ title, children }: SectionProps) {
 
   return (
     <motion.section
-      className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-16 py-12"
+      className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6 md:gap-16 py-8 sm:py-12"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
       <motion.div variants={headingVariants}>
-        <h3 className="text-brand-500 text-sm font-semibold tracking-[0.25em] text-left md:text-right">
+        <h3 className="text-brand-500 text-xs sm:text-sm font-semibold tracking-[0.25em] text-left md:text-right uppercase">
           {title}
         </h3>
       </motion.div>

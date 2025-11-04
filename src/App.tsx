@@ -16,8 +16,10 @@ declare global {
 
 export function App() {
   useEffect(() => {
+    const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: isTouchDevice ? 0.8 : 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
     });
@@ -41,12 +43,12 @@ export function App() {
     <>
       <Background />
       <CursorGlow />
-      <div className="w-full absolute top-0">
-        <div className="w-full max-w-7xl flex justify-end pt-3 px-5 mx-auto">
+      <div className="w-full absolute top-0 z-50">
+        <div className="w-full max-w-7xl flex justify-end pt-4 sm:pt-6 px-4 sm:px-5 mx-auto">
           <LanguageToggle />
         </div>
       </div>
-      <div className="w-full max-w-7xl mx-auto px-5 pb-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-5 pb-16 sm:pb-20">
         <Hero />
         <About />
         <MainProjects />

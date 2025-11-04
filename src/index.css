@@ -18,3 +18,28 @@
 .blue-text {
   @apply text-transparent bg-linear-to-b from-brand-500 to-brand-700 bg-clip-text;
 }
+
+@media (pointer: coarse) {
+  * {
+    -webkit-tap-highlight-color: rgba(124, 160, 249, 0.1);
+  }
+
+  button:active,
+  a:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}

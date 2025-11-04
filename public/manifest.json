@@ -1,0 +1,18 @@
+{
+  "name": "Iran Batista - Portfolio",
+  "short_name": "Iran Portfolio",
+  "description": "Full Stack Developer specializing in React, TypeScript, and modern web technologies",
+  "start_url": "/portfolio/",
+  "display": "standalone",
+  "background_color": "#0a1333",
+  "theme_color": "#0a1333",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/portfolio/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

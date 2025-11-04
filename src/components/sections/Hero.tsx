@@ -44,7 +44,7 @@ export function Hero() {
 
   return (
     <motion.div
-      className="flex flex-col h-screen justify-center items-start relative"
+      className="flex flex-col h-screen justify-center items-start relative px-2 sm:px-0"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -52,47 +52,47 @@ export function Hero() {
       <motion.img
         src={avatarImage}
         alt="Avatar"
-        className="w-32 h-32 rounded-xl mb-8 shadow-avatar"
+        className="w-24 h-24 sm:w-32 sm:h-32 rounded-xl mb-6 sm:mb-8 shadow-avatar"
         variants={itemVariants}
       />
       <motion.h1
-        className="text-slate-100 text-5xl mb-2"
+        className="text-slate-100 text-3xl sm:text-4xl md:text-5xl mb-2 leading-tight"
         variants={itemVariants}
       >
         {t("greetings")}{" "}
         <span className="blue-text font-extrabold">Iran Batista</span>
       </motion.h1>
       <motion.h2
-        className="text-slate-100 text-xl font-medium mb-4"
+        className="text-slate-100 text-lg sm:text-xl font-medium mb-4"
         variants={itemVariants}
       >
         {t("title")}
       </motion.h2>
 
       <motion.p
-        className="text-slate-400 mb-8 text-sm leading-normal"
+        className="text-slate-400 mb-6 sm:mb-8 text-sm sm:text-base leading-normal max-w-xl"
         variants={itemVariants}
       >
         <Trans i18nKey="tagline" />
       </motion.p>
 
       <motion.p
-        className="text-slate-400 mb-2 text-sm flex items-center gap-2"
+        className="text-slate-400 mb-2 text-xs sm:text-sm flex items-center gap-2"
         variants={itemVariants}
       >
-        <FaEarthAmericas size={16} />
-        Based in Brazil (UTC-3) working across all timezones
+        <FaEarthAmericas size={16} className="shrink-0" />
+        <span>Based in Brazil (UTC-3) working across all timezones</span>
       </motion.p>
       <motion.a
         href="mailto:iran@iranbatista.dev"
-        className="text-slate-400 mb-8 text-sm flex items-center gap-2"
+        className="text-slate-400 mb-6 sm:mb-8 text-xs sm:text-sm flex items-center gap-2 hover:text-brand-500 transition-colors"
         variants={itemVariants}
       >
-        <FaEnvelope size={16} />
-        iran@iranbatista.dev
+        <FaEnvelope size={16} className="shrink-0" />
+        <span className="break-all">iran@iranbatista.dev</span>
       </motion.a>
 
-      <motion.div className="flex gap-2" variants={itemVariants}>
+      <motion.div className="flex flex-wrap gap-2" variants={itemVariants}>
         <Link
           href={`${import.meta.env.BASE_URL}/Resume - Iran Batista.pdf`}
           target="_blank"

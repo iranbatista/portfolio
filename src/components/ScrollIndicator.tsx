@@ -28,7 +28,7 @@ export function ScrollIndicator() {
   return (
     <motion.button
       onClick={handleClick}
-      className="absolute bottom-8 left-1/2 -translate-x-1/2  transition-colors cursor-pointer"
+      className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 transition-colors cursor-pointer"
       initial={{ opacity: 0, y: -10 }}
       animate={{
         opacity: 1,
@@ -49,7 +49,7 @@ export function ScrollIndicator() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="p-3 rounded-full bg-linear-to-br from-brand-500/10 to-transparent border border-brand-500/40 text-brand-500/40 hover:border-slate-100 hover:text-slate-100 transition ease-out duration-300"
+        className="p-2.5 sm:p-3 rounded-full bg-linear-to-br from-brand-500/10 to-transparent border border-brand-500/40 text-brand-500/40 hover:border-slate-100 hover:text-slate-100 active:scale-95 transition ease-out duration-300"
       >
         <FaChevronDown size={16} />
       </motion.div>

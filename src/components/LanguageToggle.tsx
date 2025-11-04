@@ -9,7 +9,6 @@ export function LanguageToggle() {
   const selected = i18n.language as Language;
 
   const toggleLanguage = () => {
-    console.log({ selected });
     i18n.changeLanguage(selected === "en" ? "pt" : "en");
   };
 
