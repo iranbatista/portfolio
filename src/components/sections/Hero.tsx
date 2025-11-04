@@ -1,7 +1,14 @@
 import { motion, type Variants } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
-import { AiFillGithub, AiFillLinkedin, AiOutlineLink } from "react-icons/ai";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaArrowUpRightFromSquare,
+  FaEarthAmericas,
+  FaEnvelope,
+} from "react-icons/fa6";
 import { Link } from "../Link";
+import { ScrollIndicator } from "../ScrollIndicator";
 import avatarImage from "../../assets/avatar.png";
 
 export function Hero() {
@@ -30,14 +37,14 @@ export function Hero() {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
+        ease: "easeOut",
       },
     },
   };
 
   return (
     <motion.div
-      className="flex flex-col"
+      className="flex flex-col h-screen justify-center items-start relative"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -45,29 +52,45 @@ export function Hero() {
       <motion.img
         src={avatarImage}
         alt="Avatar"
-        className="w-32 h-32 rounded-xl mb-5 shadow-avatar"
+        className="w-32 h-32 rounded-xl mb-8 shadow-avatar"
         variants={itemVariants}
       />
       <motion.h1
-        className="text-zinc-100 text-5xl mb-2"
+        className="text-slate-100 text-5xl mb-2"
         variants={itemVariants}
       >
         {t("greetings")}{" "}
         <span className="blue-text font-extrabold">Iran Batista</span>
       </motion.h1>
       <motion.h2
-        className="text-zinc-100 text-xl font-medium mb-4"
+        className="text-slate-100 text-xl font-medium mb-4"
         variants={itemVariants}
       >
         {t("title")}
       </motion.h2>
 
       <motion.p
-        className="text-zinc-400 mb-8 text-sm leading-normal"
+        className="text-slate-400 mb-8 text-sm leading-normal"
         variants={itemVariants}
       >
         <Trans i18nKey="tagline" />
       </motion.p>
+
+      <motion.p
+        className="text-slate-400 mb-2 text-sm flex items-center gap-2"
+        variants={itemVariants}
+      >
+        <FaEarthAmericas size={16} />
+        Based in Brazil (UTC-3) working across all timezones
+      </motion.p>
+      <motion.a
+        href="mailto:iran@iranbatista.dev"
+        className="text-slate-400 mb-8 text-sm flex items-center gap-2"
+        variants={itemVariants}
+      >
+        <FaEnvelope size={16} />
+        iran@iranbatista.dev
+      </motion.a>
 
       <motion.div className="flex gap-2" variants={itemVariants}>
         <Link
@@ -76,7 +99,7 @@ export function Hero() {
           rel="noopener noreferrer"
         >
           {t("resumeCTA")}
-          <AiOutlineLink size={20} />
+          <FaArrowUpRightFromSquare size={16} />
         </Link>
         <Link
           href="https://github.com/iranbatista"
@@ -84,7 +107,7 @@ export function Hero() {
           rel="noopener noreferrer"
           className="px-2.5"
         >
-          <AiFillGithub size={20} />
+          <FaGithub size={20} />
         </Link>
         <Link
           href="https://www.linkedin.com/in/iranbatista"
@@ -92,9 +115,11 @@ export function Hero() {
           rel="noopener noreferrer"
           className="px-2.5"
         >
-          <AiFillLinkedin size={20} />
+          <FaLinkedin size={20} />
         </Link>
       </motion.div>
+
+      <ScrollIndicator />
     </motion.div>
   );
 }
