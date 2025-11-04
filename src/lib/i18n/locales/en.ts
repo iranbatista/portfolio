@@ -43,7 +43,7 @@ export const en: Translation = {
     {
       image: "https://placehold.co/250x150",
       title: "Female Athletes Mentorship App",
-      company: "Shaw & Partners (US Company)",
+      company: "Voice In Sports (US Company)",
       tagline: "Cross-platform app with 4.9★ rating",
       description:
         "Delivered React Native with Expo mentorship application connecting 1,000+ young female athletes with mentors. Achieved 4.9 App Store rating through seamless cross-platform UX and intuitive design. Implemented TypeScript for enhanced code reliability. Led front-end development ensuring consistent quality across iOS and Android platforms.",
@@ -75,6 +75,62 @@ export const en: Translation = {
     {
       title: "3 languages",
       description: "English, Portuguese, Spanish",
+    },
+  ],
+  skills: "SKILLS",
+  skillsCategories: [
+    {
+      id: "frontend",
+      title: "Frontend",
+      skills: [
+        "React",
+        "React Native",
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Redux",
+        "Zustand",
+        "Styled Components",
+      ],
+    },
+    {
+      id: "backend",
+      title: "Backend",
+      skills: [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "TypeScript",
+        "RESTful APIs",
+        "GraphQL",
+        "WebSockets",
+        "Microservices",
+      ],
+    },
+    {
+      id: "database",
+      title: "Database",
+      skills: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Query Optimization",
+        "Migrations",
+      ],
+    },
+    {
+      id: "devops",
+      title: "DevOps & Tools",
+      skills: [
+        "Docker",
+        "Git",
+        "CI/CD",
+        "GitHub Actions",
+        "AWS",
+        "Nginx",
+        "Linux",
+      ],
     },
   ],
 };

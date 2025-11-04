@@ -43,7 +43,7 @@ export const pt: Translation = {
     {
       image: "https://placehold.co/250x150",
       title: "App de Mentoria para Atletas Femininas",
-      company: "Shaw & Partners (Empresa Americana)",
+      company: "Voice In Sports (Empresa Americana)",
       tagline: "App multiplataforma com avaliação 4.9★",
       description:
         "Entreguei aplicação de mentoria em React Native com Expo conectando mais de 1.000 jovens atletas femininas com mentores. Alcancei avaliação 4.9 na App Store através de UX multiplataforma impecável e design intuitivo. Implementei TypeScript para maior confiabilidade do código. Liderei desenvolvimento front-end garantindo qualidade consistente nas plataformas iOS e Android.",
@@ -70,11 +70,68 @@ export const pt: Translation = {
     },
     {
       title: "Intercâmbio em San Francisco",
-      description: "Selecionado como um dos 2 melhores alunos por excelência acadêmica",
+      description:
+        "Selecionado como um dos 2 melhores alunos por excelência acadêmica",
     },
     {
       title: "3 idiomas",
       description: "Inglês, Português, Espanhol",
+    },
+  ],
+  skills: "HABILIDADES",
+  skillsCategories: [
+    {
+      id: "frontend",
+      title: "Frontend",
+      skills: [
+        "React",
+        "React Native",
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Redux",
+        "Zustand",
+        "Styled Components",
+      ],
+    },
+    {
+      id: "backend",
+      title: "Backend",
+      skills: [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "TypeScript",
+        "RESTful APIs",
+        "GraphQL",
+        "WebSockets",
+        "Microsserviços",
+      ],
+    },
+    {
+      id: "database",
+      title: "Banco de Dados",
+      skills: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Query Optimization",
+        "Migrations",
+      ],
+    },
+    {
+      id: "devops",
+      title: "DevOps & Ferramentas",
+      skills: [
+        "Docker",
+        "Git",
+        "CI/CD",
+        "GitHub Actions",
+        "AWS",
+        "Nginx",
+        "Linux",
+      ],
     },
   ],
 };

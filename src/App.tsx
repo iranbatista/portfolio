@@ -7,6 +7,7 @@ import { LanguageToggle } from "./components/LanguageToggle";
 import { Hero } from "./components/sections/Hero";
 import { MainProjects } from "./components/sections/MainProjects";
 import { About } from "./components/sections/About";
+import { Skills } from "./components/sections/Skills";
 
 declare global {
   interface Window {
@@ -52,6 +53,7 @@ export function App() {
         <Hero />
         <About />
         <MainProjects />
+        <Skills />
       </div>
     </>
   );

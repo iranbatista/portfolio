@@ -11,7 +11,7 @@ export function About() {
   const contentVariants: Variants = {
     hidden: {
       opacity: 0,
-      y: 30,
+      y: 20,
     },
     visible: {
       opacity: 1,
@@ -26,7 +26,7 @@ export function About() {
   const boxVariants: Variants = {
     hidden: {
       opacity: 0,
-      y: 30,
+      y: 20,
     },
     visible: {
       opacity: 1,

@@ -17,7 +17,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const cardVariants: Variants = {
     hidden: {
       opacity: 0,
-      y: 30,
+      y: 20,
     },
     visible: {
       opacity: 1,

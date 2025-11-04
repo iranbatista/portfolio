@@ -12,6 +12,12 @@ export type EducationItem = {
   description: string;
 };
 
+export type SkillsCategory = {
+  id: string;
+  title: string;
+  skills: string[];
+};
+
 export type Translation = {
   greetings: string;
   title: string;
@@ -23,4 +29,6 @@ export type Translation = {
   aboutDescription: string;
   educationTitle: string;
   education: EducationItem[];
+  skills: string;
+  skillsCategories: SkillsCategory[];
 };
