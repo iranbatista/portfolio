@@ -17,18 +17,6 @@ export function Skills() {
     devops: FaCloud,
   };
 
-  const containerVariants: Variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
   const cardVariants: Variants = {
     hidden: {
       opacity: 0,
@@ -63,13 +51,7 @@ export function Skills() {
 
   return (
     <Section title={t("skills")}>
-      <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
         {categories.map((category) => {
           const Icon = categoriesIcons[category.id];
 
@@ -78,6 +60,8 @@ export function Skills() {
               key={category.id}
               className="bg-linear-to-br from-brand-500/10 via-transparent to-transparent border border-brand-500/20 rounded-lg p-4 md:p-6"
               variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
             >
               <div className="flex items-center gap-3 mb-3 md:mb-4">
@@ -92,8 +76,6 @@ export function Skills() {
                     key={skill}
                     className="text-xs sm:text-sm px-2.5 py-1.5 sm:px-3 rounded-lg bg-slate-700/40"
                     variants={chipVariants}
-                    initial="hidden"
-                    whileInView="visible"
                   >
                     {skill}
                   </motion.span>
@@ -102,7 +84,7 @@ export function Skills() {
             </motion.div>
           );
         })}
-      </motion.div>
+      </div>
     </Section>
   );
 }
