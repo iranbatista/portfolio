@@ -5,6 +5,7 @@ export const pt: Translation = {
   title: "Engenheiro de Software Full Stack",
   tagline:
     "Especialista em TypeScript entregando software<br />de impacto para mercados globais.",
+    location: "Brasil (UTC-3) • Disponível em todos os fusos horários",
   resumeCTA: "Ver Currículo",
   featuredProjects: "PROJETOS DESTACADOS",
   projects: [

@@ -81,7 +81,7 @@ export function Hero() {
         variants={itemVariants}
       >
         <FaEarthAmericas size={16} className="shrink-0" />
-        <span>Based in Brazil (UTC-3) working across all timezones</span>
+        <span>{t("location")}</span>
       </motion.p>
       <motion.a
         href="mailto:iran@iranbatista.dev"

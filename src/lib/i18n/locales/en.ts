@@ -5,6 +5,7 @@ export const en: Translation = {
   title: "Full Stack Software Engineer",
   tagline:
     "TypeScript specialist delivering impactful<br />software for global markets.",
+  location: "Brazil (UTC-3) • Working across all timezones",
   resumeCTA: "View Resume",
   featuredProjects: "FEATURED PROJECTS",
   projects: [

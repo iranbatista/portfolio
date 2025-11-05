@@ -30,6 +30,7 @@ export type Translation = {
   greetings: string;
   title: string;
   tagline: string;
+  location: string;
   resumeCTA: string;
   featuredProjects: string;
   projects: Project[];
