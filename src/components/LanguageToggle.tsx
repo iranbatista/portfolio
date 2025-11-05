@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { cn } from "../utils/cn";
 
-type Language = "en" | "pt";
+export type Language = "en" | "pt";
 
 export function LanguageToggle() {
   const { i18n } = useTranslation();

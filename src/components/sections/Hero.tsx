@@ -10,9 +10,11 @@ import {
 import { Link } from "../Link";
 import { ScrollIndicator } from "../ScrollIndicator";
 import avatarImage from "../../assets/avatar.png";
+import type { Language } from "../LanguageToggle";
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const selected = i18n.language as Language;
 
   const containerVariants: Variants = {
     hidden: {
@@ -94,7 +96,7 @@ export function Hero() {
 
       <motion.div className="flex flex-wrap gap-2" variants={itemVariants}>
         <Link
-          href="/resume.pdf"
+          href={selected === "en" ? "/resume.pdf" : "/curriculo.pdf"}
           target="_blank"
           rel="noopener noreferrer"
         >
