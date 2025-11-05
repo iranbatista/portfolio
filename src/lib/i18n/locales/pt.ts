@@ -1,3 +1,7 @@
+import coreopsProject from "../../../assets/projects/coreops.png";
+import gsafraProject from "../../../assets/projects/gsafra.png";
+import visProject from "../../../assets/projects/vis.png";
+import shawProject from "../../../assets/projects/shaw.png";
 import type { Translation } from "../types";
 
 export const pt: Translation = {
@@ -5,15 +9,15 @@ export const pt: Translation = {
   title: "Engenheiro de Software Full Stack",
   tagline:
     "Especialista em TypeScript entregando software<br />de impacto para mercados globais.",
-    location: "Brasil (UTC-3) • Disponível em todos os fusos horários",
+  location: "Brasil (UTC-3) • Disponível em todos os fusos horários",
   resumeCTA: "Ver Currículo",
   featuredProjects: "PROJETOS DESTACADOS",
   projects: [
     {
-      image: `${import.meta.env.BASE_URL}/projects/coreops.png`,
+      image: coreopsProject,
       title: "Sistema Empresarial de Gestão de Contratos",
       company: "Routz (Corporação Multinacional)",
-      tagline: "Plataforma SaaS arquitetada sozinho em 10 semanas",
+      tagline: "Plataforma arquitetada sozinho em 10 semanas",
       description:
         "Arquitetei aplicação web React com suporte i18n processando mais de 1.000 tickets mensais via integração com API Movidesk. Desenvolvi microsserviços NestJS com monitoramento automatizado e integração JSReport para relatórios PDF. Containerizei com Docker e estabeleci pipeline CI/CD reduzindo tempo de deploy para 3 minutos. Zero bugs críticos pós-lançamento.",
       techStack: [
@@ -26,7 +30,7 @@ export const pt: Translation = {
       ],
     },
     {
-      image: `${import.meta.env.BASE_URL}/projects/gsafra.png`,
+      image: gsafraProject,
       title: "Plataforma Agrícola Offline-First",
       company: "Coyote Tecnologia",
       tagline: "App móvel para áreas rurais sem conectividade",
@@ -42,7 +46,7 @@ export const pt: Translation = {
       ],
     },
     {
-      image: `${import.meta.env.BASE_URL}/projects/vis.png`,
+      image: visProject,
       title: "App de Mentoria para Atletas Femininas",
       company: "Voice In Sports (Empresa Americana)",
       tagline: "App multiplataforma com avaliação 4.9★",
@@ -51,7 +55,7 @@ export const pt: Translation = {
       techStack: ["React Native", "Expo", "TypeScript", "Node.js", "CI/CD"],
     },
     {
-      image: `${import.meta.env.BASE_URL}/projects/shaw.png`,
+      image: shawProject,
       title: "Plataforma Interna de Automação de RH",
       company: "Shaw & Partners (Empresa Americana)",
       tagline: "Automação de fluxo de trabalho multi-departamental",

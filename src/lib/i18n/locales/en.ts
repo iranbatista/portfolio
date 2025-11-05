@@ -1,3 +1,7 @@
+import coreopsProject from "../../../assets/projects/coreops.png";
+import gsafraProject from "../../../assets/projects/gsafra.png";
+import visProject from "../../../assets/projects/vis.png";
+import shawProject from "../../../assets/projects/shaw.png";
 import type { Translation } from "../types";
 
 export const en: Translation = {
@@ -10,10 +14,10 @@ export const en: Translation = {
   featuredProjects: "FEATURED PROJECTS",
   projects: [
     {
-      image: `${import.meta.env.BASE_URL}/projects/coreops.png`,
+      image: coreopsProject,
       title: "Enterprise Contract Management System",
       company: "Routz (Multinational Corporation)",
-      tagline: "Solo-architected SaaS platform in 10 weeks",
+      tagline: "Solo-architected platform in 10 weeks",
       description:
         "Architected React web app with i18n support processing 1,000+ tickets monthly via Movidesk API integration. Developed NestJS microservices with automated monitoring and JSReport integration for PDF reports. Containerized with Docker and established CI/CD pipeline reducing deployment time to 3 minutes. Zero critical bugs post-launch.",
       techStack: [
@@ -26,7 +30,7 @@ export const en: Translation = {
       ],
     },
     {
-      image: `${import.meta.env.BASE_URL}/projects/gsafra.png`,
+      image: gsafraProject,
       title: "Offline-First Agricultural Platform",
       company: "Coyote Tecnologia",
       tagline: "Mobile app for zero-connectivity rural areas",
@@ -42,7 +46,7 @@ export const en: Translation = {
       ],
     },
     {
-      image: `${import.meta.env.BASE_URL}/projects/vis.png`,
+      image: visProject,
       title: "Female Athletes Mentorship App",
       company: "Voice In Sports (US Company)",
       tagline: "Cross-platform app with 4.9★ rating",
@@ -51,7 +55,7 @@ export const en: Translation = {
       techStack: ["React Native", "Expo", "Styled Components"],
     },
     {
-      image: `${import.meta.env.BASE_URL}/projects/shaw.png`,
+      image: shawProject,
       title: "Internal HR Automation Platform",
       company: "Shaw & Partners (US Company)",
       tagline: "Multi-department workflow automation",
