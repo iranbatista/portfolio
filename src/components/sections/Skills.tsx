@@ -63,10 +63,11 @@ export function Skills() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
+              whileHover={{ y: -8, transition: { ease: 'easeOut', duration: 0.3 } }}
             >
               <div className="flex items-center gap-3 mb-3 md:mb-4">
                 <Icon className="w-5 h-5 md:w-6 md:h-6 text-brand-500 shrink-0" />
-                <h3 className="font-medium text-sm sm:text-base text-zinc-100">
+                <h3 className="font-medium text-sm sm:text-base text-slate-100">
                   {category.title}
                 </h3>
               </div>

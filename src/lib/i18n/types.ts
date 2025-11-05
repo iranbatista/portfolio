@@ -18,6 +18,14 @@ export type SkillsCategory = {
   skills: string[];
 };
 
+export type Experience = {
+  role: string;
+  company: string;
+  location: string;
+  period: string;
+  type: string;
+};
+
 export type Translation = {
   greetings: string;
   title: string;
@@ -31,4 +39,6 @@ export type Translation = {
   education: EducationItem[];
   skills: string;
   skillsCategories: SkillsCategory[];
+  workExperiences: string;
+  experiences: Experience[];
 };

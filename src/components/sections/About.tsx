@@ -62,6 +62,7 @@ export function About() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-50px" }}
+        whileHover={{ scale: 1.01, transition: { ease: 'easeOut', duration: 0.3 } }}
       >
         <div className="flex items-start gap-3 md:gap-4">
           <FaAward className="w-5 h-5 md:w-6 md:h-6 text-brand-500 shrink-0 mt-1" />

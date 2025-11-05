@@ -134,4 +134,28 @@ export const pt: Translation = {
       ],
     },
   ],
+  workExperiences: "EXPERIÊNCIAS PROFISSIONAIS",
+  experiences: [
+    {
+      role: "Engenheiro Líder & Desenvolvedor Solo",
+      company: "Routz",
+      location: "Corporação Multinacional",
+      period: "Ago 2025 - Out 2025",
+      type: "Contrato",
+    },
+    {
+      role: "Engenheiro de Software",
+      company: "Shaw & Partners",
+      location: "Empresa Americana",
+      period: "Set 2024 - Set 2025",
+      type: "Tempo Integral",
+    },
+    {
+      role: "Engenheiro de Software Full Stack",
+      company: "Coyote Tecnologia",
+      location: "Brasil",
+      period: "Abr 2022 - Ago 2024",
+      type: "Tempo Integral",
+    },
+  ],
 };

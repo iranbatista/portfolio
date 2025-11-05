@@ -36,6 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
+      whileHover={{ x: 8, transition: { ease: 'easeOut', duration: 0.3 } }}
     >
       <img
         src={project.image}

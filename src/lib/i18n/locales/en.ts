@@ -133,4 +133,28 @@ export const en: Translation = {
       ],
     },
   ],
+  workExperiences: "WORK EXPERIENCES",
+  experiences: [
+    {
+      role: "Lead Engineer & Sole Developer",
+      company: "Routz",
+      location: "Multinational Corporation",
+      period: "Aug 2025 - Oct 2025",
+      type: "Contract",
+    },
+    {
+      role: "Software Engineer",
+      company: "Shaw & Partners",
+      location: "US Company",
+      period: "Sep 2024 - Sep 2025",
+      type: "Full-time",
+    },
+    {
+      role: "Full Stack Software Engineer",
+      company: "Coyote Tecnologia",
+      location: "Brazil",
+      period: "Apr 2022 - Aug 2024",
+      type: "Full-time",
+    },
+  ],
 };
