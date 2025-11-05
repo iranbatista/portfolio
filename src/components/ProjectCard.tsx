@@ -41,7 +41,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <img
         src={project.image}
         alt={`${project.title} Cover`}
-        className="rounded-xl w-auto md:shrink-0"
+        className="rounded-xl w-full md:w-[250px] md:shrink-0"
       />
       <div className="flex flex-col">
         <span className="text-brand-500 text-sm mb-1">{project.company}</span>

@@ -9,7 +9,7 @@ export const en: Translation = {
   featuredProjects: "FEATURED PROJECTS",
   projects: [
     {
-      image: "https://placehold.co/250x150",
+      image: `${import.meta.env.BASE_URL}/projects/coreops.png`,
       title: "Enterprise Contract Management System",
       company: "Routz (Multinational Corporation)",
       tagline: "Solo-architected SaaS platform in 10 weeks",
@@ -25,7 +25,7 @@ export const en: Translation = {
       ],
     },
     {
-      image: "https://placehold.co/250x150",
+      image: `${import.meta.env.BASE_URL}/projects/gsafra.png`,
       title: "Offline-First Agricultural Platform",
       company: "Coyote Tecnologia",
       tagline: "Mobile app for zero-connectivity rural areas",
@@ -41,7 +41,7 @@ export const en: Translation = {
       ],
     },
     {
-      image: "https://placehold.co/250x150",
+      image: `${import.meta.env.BASE_URL}/projects/vis.png`,
       title: "Female Athletes Mentorship App",
       company: "Voice In Sports (US Company)",
       tagline: "Cross-platform app with 4.9★ rating",
@@ -50,7 +50,7 @@ export const en: Translation = {
       techStack: ["React Native", "Expo", "Styled Components"],
     },
     {
-      image: "https://placehold.co/250x150",
+      image: `${import.meta.env.BASE_URL}/projects/shaw.png`,
       title: "Internal HR Automation Platform",
       company: "Shaw & Partners (US Company)",
       tagline: "Multi-department workflow automation",

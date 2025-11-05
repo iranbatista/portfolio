@@ -9,7 +9,7 @@ export function MainProjects() {
 
   return (
     <Section title={t("featuredProjects")}>
-      <div className="flex flex-col gap-6 md:gap-10">
+      <div className="flex flex-col gap-8 md:gap-10">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
